@@ -18,7 +18,7 @@ server.set('views', __dirname + '/views')
 
 server.get('/', (req, res) => {
   dataObj = {
-    title: 'the Wisdom of Zoltash',
+    title: 'The Wisdom of Zoltash',
   }
   res.render('home', dataObj)
 })

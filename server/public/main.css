@@ -36,7 +36,7 @@ body {
   }
   .imageWrapper{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
   }
 
   .form-graphic{
@@ -45,4 +45,16 @@ body {
   form{
     display: flex;
     flex-direction: column;
+  }
+
+  a button{
+    padding: 20px;
+    min-width: 160px;
+    font-weight: bold;
+    background-color: #292de3 ;
+    color: white;
+
+  }
+  a:hover button{
+    background-color:#f28c36;
   }
