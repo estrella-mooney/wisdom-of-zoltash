@@ -46,4 +46,6 @@ server.get('/q2', (request, response) => {
   response.render('home', dataObj) //Make sure to change this to Question Two when we have page
 })
 
+
+
 module.exports = server
