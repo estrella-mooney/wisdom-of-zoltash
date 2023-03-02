@@ -1,5 +1,6 @@
 const express = require('express')
 const hbs = require('express-handlebars')
+const res = require('express/lib/response')
 
 const server = express()
 
@@ -36,6 +37,13 @@ server.get('/fortune', (req, res) => {
     title: 'Here is your fortune',
   }
   res.render('home', dataObj) //<----- Change to 'fortune'
+})
+// Server.get for the Question two
+server.get('/q2', (request, response) => {
+  dataObj = {
+    title: 'the Wisdom of Zoltash',
+  }
+  response.render('home', dataObj) //Make sure to change this to Question Two when we have page
 })
 
 module.exports = server
