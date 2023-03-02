@@ -23,6 +23,21 @@ server.get('/', (req, res) => {
   res.render('home', dataObj)
 })
 
+// Q1 route
+server.get('/q1', (req, res) => {
+  dataObj = {
+    title: 'Question One',
+  }
+  res.render('home', dataObj) //<----- Change to 'q1'
+})
+
+// Fortune route
+server.get('/fortune', (req, res) => {
+  dataObj = {
+    title: 'Here is your fortune',
+  }
+  res.render('home', dataObj) //<----- Change to 'fortune'
+})
 // Server.get for the Question two
 server.get('/q2', (request, response) => {
   dataObj = {
