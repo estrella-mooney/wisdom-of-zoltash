@@ -1,0 +1,17 @@
+body {
+    background-color: #fdf7e6;
+    font-family: 'Raleway', serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
