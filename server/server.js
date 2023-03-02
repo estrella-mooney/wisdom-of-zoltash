@@ -22,4 +22,6 @@ server.get('/', (req, res) => {
     res.render('home', dataObj)
 })
 
+
+
 module.exports = server
