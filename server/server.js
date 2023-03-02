@@ -40,6 +40,8 @@ server.get('/q2', (request, response) => {
   response.render('q2', dataObj) //Make sure to change this to Question Two when we have page
 })
 
+
+
 // Fortune route
 server.get('/fortune', (req, res) => {
   dataObj = {
@@ -47,7 +49,6 @@ server.get('/fortune', (req, res) => {
   }
   res.render('fortune', dataObj) //<----- Change to 'fortune'
 })
-
 
 
 module.exports = server
