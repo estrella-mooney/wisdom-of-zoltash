@@ -28,7 +28,15 @@ server.get('/q1', (req, res) => {
   dataObj = {
     title: 'Question One',
   }
-  res.render('home', dataObj) //<----- Change to 'q1'
+  res.render('q1', dataObj) //<----- Change to 'q1'
+})
+
+// Server.get for the Question two
+server.get('/q2', (request, response) => {
+  dataObj = {
+    title: 'the Wisdom of Zoltash',
+  }
+  response.render('q2', dataObj) //Make sure to change this to Question Two when we have page
 })
 
 // Fortune route
@@ -38,14 +46,5 @@ server.get('/fortune', (req, res) => {
   }
   res.render('home', dataObj) //<----- Change to 'fortune'
 })
-// Server.get for the Question two
-server.get('/q2', (request, response) => {
-  dataObj = {
-    title: 'the Wisdom of Zoltash',
-  }
-  response.render('home', dataObj) //Make sure to change this to Question Two when we have page
-})
-
-
 
 module.exports = server
