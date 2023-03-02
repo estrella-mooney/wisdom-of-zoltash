@@ -1,0 +1,28 @@
+{
+  "fortunes": [
+    {
+      "id": 1,
+      "name": "Fortune1",
+      "content": ["Next month will hold a special significance for you. Your highschool crush from back in the day will DM you on Facebook messenger at 4:33pm on a tuesday. After 
+      almost mistaking it for some random spam about an adult entertainment website, you read on. They will confess that you were the one that got away' and that they think that you 
+      two really had something special that one time on 5th form camp when you were wearing a", "userFavColour", "scarf and shared airbuds and listened to All Star by Smashmouth", "userFavNumber", "times.    
+      And is if that wasnt mind-blowing enough, youll also go to the local pub quiz and win a", "userFavNumber", "dollar bar tab"],
+      "userFavColour": "",
+      "userFavNumber": "",
+      
+    },
+
+    {
+      "id": 2,
+      "name": "Fortune2",
+      "content": ["On wednesday a fortnight from now there is a big horse race taking place at 845am in Whanagaui. You should bet on a horse named", "userFavNumber", "userFavColour", "balloons. 
+      It wins by a landslide and due to a clerical error the prize ends up being 1,000,000 dollars instead of 1,000 dollars. On the way home you notice a billboard that says 
+      userEnteredString. Considering this some kind of cryptic omen, you invest in some beer NFTs but turns out the hedge fund is a ponzi scheme managed by Sam Bankman-Fried and he squanders it on some 
+      more islands for him and his chums. A valuable lesson has been learned - sometimes you should quit while youre ahead."],
+      "userFavColour": "",
+      "userFavNumber": ""
+    }
+
+  ]
+  },
+
