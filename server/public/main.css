@@ -57,4 +57,21 @@ body {
   }
   a:hover button{
     background-color:#f28c36;
+
+  }
+
+  form label{
+    margin-bottom: 20px;
+  }
+  form input{
+    height: 30px;
+    padding: 0 30px;
+    /* background-color: #f28c36; */
+  }
+
+  form .button{
+    background-color: #292de3;
+    color:white;
+    margin-top:20px
+
   }
