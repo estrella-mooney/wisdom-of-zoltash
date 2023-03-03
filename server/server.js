@@ -2,10 +2,6 @@ const fs = require('node:fs/promises')
 const express = require('express')
 const hbs = require('express-handlebars')
 const res = require('express/lib/response')
-//Estrella stuff
-const fs = require('node:fs/promises')
-const fileData = __dirname + '/data/data.json'
-//Estrella ^^^^
 
 const server = express()
 
@@ -36,12 +32,6 @@ server.get('/q1', (req, res) => {
   res.render('q1', dataObj) //<----- Change to 'q1'
 })
 
-<<<<<<< HEAD
-// Server.get for the Question two
-server.get('/q2', (request, response) => {
-  dataObj = {
-    title: 'Question Two',
-=======
 
 
 server.post('/q1', (req, res) => {
@@ -56,23 +46,11 @@ server.post('/q1', (req, res) => {
 server.get('/q2', (request, response) => {
   let dataObj = {
     title: 'the Wisdom of Zoltash',
->>>>>>> 1ad1dec (fortune page gets ramdom fortune, doesnt include form data)
   }
   response.render('q2', dataObj) //Make sure to change this to Question Two when we have page
 })
 
-<<<<<<< HEAD
-//Estrella CHANGES ------->
-server.post('/q2', (req, res) => {
-  console.log(req.body)
-  console.log(fileData)
-  res.redirect('/fortune')
-})
 
-// Fortune route
-=======
-
->>>>>>> 1ad1dec (fortune page gets ramdom fortune, doesnt include form data)
 server.get('/fortune', (req, res) => {
   fs.readFile(__dirname + '/data/data.json', 'utf-8')
   .then((answer) => {
