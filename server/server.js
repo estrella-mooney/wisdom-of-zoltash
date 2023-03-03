@@ -1,6 +1,10 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const res = require('express/lib/response')
+//Estrella stuff
+const fs = require('node:fs/promises')
+const fileData = __dirname + '/data/data.json'
+//Estrella ^^^^
 
 const server = express()
 
@@ -31,16 +35,20 @@ server.get('/q1', (req, res) => {
   res.render('q1', dataObj) //<----- Change to 'q1'
 })
 
-
 // Server.get for the Question two
 server.get('/q2', (request, response) => {
   dataObj = {
-    title: 'the Wisdom of Zoltash',
+    title: 'Question Two',
   }
   response.render('q2', dataObj) //Make sure to change this to Question Two when we have page
 })
 
-
+//Estrella CHANGES ------->
+server.post('/q2', (req, res) => {
+  console.log(req.body)
+  console.log(fileData)
+  res.redirect('/fortune')
+})
 
 // Fortune route
 server.get('/fortune', (req, res) => {
@@ -49,6 +57,5 @@ server.get('/fortune', (req, res) => {
   }
   res.render('fortune', dataObj) //<----- Change to 'fortune'
 })
-
 
 module.exports = server
