@@ -6,7 +6,9 @@ blue #292de3 */
 body {
     background-color: #161d2b;
     font-family: 'Raleway', serif;
-    color:#fff1db
+    color:#fff1db;
+    background-image: url(./images/bg-stars.svg);
+    
   }
   
   .container {
@@ -30,10 +32,7 @@ body {
   }
   
 
-  /* home page */
-  .container.home{
-    background-image: url(./images/bg-stars.svg);
-  }
+ 
   .imageWrapper{
     width: 100%;
     max-width: 400px;
@@ -47,31 +46,39 @@ body {
     flex-direction: column;
   }
 
+  form input[type=submit],
   a button{
-    padding: 20px;
-    min-width: 160px;
     font-weight: bold;
     background-color: #292de3 ;
     color: white;
-
+    transition: background-color .3s ease-in-out;
   }
+
+  form input[type=submit]:hover,
   a:hover button{
+    transition: background-color .3s ease-in-out;
     background-color:#f28c36;
-
   }
+  
+  a button{
+    padding: 20px;
+    min-width: 160px;
+  }
+
+  form input[type=submit]{
+    margin-top: 6px;
+  }
+
+
 
   form label{
     margin-bottom: 20px;
   }
+
   form input{
-    height: 30px;
+    height: 40px;
     padding: 0 30px;
-    /* background-color: #f28c36; */
+    border:none
   }
 
-  form .button{
-    background-color: #292de3;
-    color:white;
-    margin-top:20px
 
-  }

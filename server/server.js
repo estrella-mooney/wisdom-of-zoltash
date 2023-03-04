@@ -32,6 +32,8 @@ server.get('/q1', (req, res) => {
   res.render('q1', dataObj)
 })
 
+
+
 server.post('/q1', (req, res) => {
   const formStuff = req.body
   // const answerOne = formStuff.a1;
@@ -50,6 +52,7 @@ server.post('/q1', (req, res) => {
     // update each objects fortuneResult2 property
     fortunes.forEach((fortune) => {
       fortune.fortuneResult2 = formStuff.a1
+      // fortune.fortuneResult2 = Number(formStuff.a1)
     })
 
     //change the json data so its readable, and align back to object
@@ -68,6 +71,14 @@ server.post('/q1', (req, res) => {
     res.status(500).send(err.message)
   })
 
+})
+
+// Q2 route
+server.get('/q2', (req, res) => {
+  let dataObj = {
+    title: 'Question Two',
+  }
+  res.render('q2', dataObj)
 })
 
 
