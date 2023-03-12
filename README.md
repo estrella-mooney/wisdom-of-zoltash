@@ -1,5 +1,7 @@
 # wisdom-of-zoltash
 
+// Finished project https://wisdom-of-zoltash.devacademy.nz/
+
 // PROJECT: THE WISDOM OF ZOLTASH
 
 //  Page description: step right up, and prepare to be dazzled by these super accurate fortune telling feats. The page will ask you a question, then populate to another
