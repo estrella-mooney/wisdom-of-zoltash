@@ -1,6 +1,6 @@
 # wisdom-of-zoltash
 
-// Finished project https://wisdom-of-zoltash.devacademy.nz/
+// Finished project -> 
 
 // PROJECT: THE WISDOM OF ZOLTASH
 
@@ -30,10 +30,10 @@
 
 - 
 
-// [ ] handlebars files to set up layouts
-// [ ] main.css file
-// [ ] index.js file
-// [ ] data.json
-// [ ] gitignore file....?
+// [x] handlebars files to set up layouts
+// [x] main.css file
+// [x] index.js file
+// [x] data.json
+// [x] gitignore file....?
 // [ ] make some tests! test file (if we have time)
 
